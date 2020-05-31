@@ -93,7 +93,7 @@ describe("Shortest Path Frankfurt to München", {
 
   it("returns the correct distance", {
     expect_equal(
-      find_shortest_path(test_data, start, end)[[1]],
+      find_shortest_path(test_data, start, end),
       487
     )
   })
@@ -103,7 +103,7 @@ describe("Shortest Path Frankfurt to München", {
 
   it("returns the correct distance", {
     expect_equal(
-      find_shortest_path(test_data, reverse_start, reverse_end)[[1]],
+      find_shortest_path(test_data, reverse_start, reverse_end),
       487
     )
   })
@@ -115,7 +115,7 @@ describe("Shortest Path Mannheim to Stuttgart", {
 
   it("returns the correct distance", {
     expect_equal(
-      find_shortest_path(test_data, start, end)[[1]], 588
+      find_shortest_path(test_data, start, end), 588
     )
   })
 })
@@ -126,7 +126,7 @@ describe("Shortest Path Augsburg to Würzburg", {
 
   it("returns the correct distance", {
     expect_equal(
-      find_shortest_path(test_data, start, end)[[1]], 354
+      find_shortest_path(test_data, start, end), 354
     )
   })
 })
@@ -137,7 +137,7 @@ describe("Shortest Path Nürnberg to Mannheim", {
 
   it("returns the correct distance", {
     expect_equal(
-      find_shortest_path(test_data, start, end)[[1]], 405
+      find_shortest_path(test_data, start, end), 405
     )
   })
 })
@@ -148,7 +148,7 @@ describe("When start and end node are direct neighbors", {
 
   it("returns the correct distance", {
     expect_equal(
-      find_shortest_path(test_data, start, end)[[1]], 80
+      find_shortest_path(test_data, start, end), 80
     )
   })
 })
