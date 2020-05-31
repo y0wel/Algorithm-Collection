@@ -159,7 +159,7 @@ describe("When start and end node are the same", {
 
   it("returns 0", {
     expect_equal(
-      find_shortest_path(data, start, end), 0
+      find_shortest_path(test_data, start, end), 0
     )
   })
 })
